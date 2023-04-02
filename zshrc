@@ -1,11 +1,6 @@
 export EDITOR=nvim
 export VISUAL=nvim
 
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-	startx
-	exit
-fi
-
 bindkey -v
 
 autoload compinit && compinit
