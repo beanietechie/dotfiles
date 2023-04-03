@@ -3,10 +3,11 @@ export VISUAL=nvim
 
 bindkey -v
 
-autoload compinit && compinit
+autoload -U compinit && compinit
 
 autoload -U colors && colors
-PROMPT="%{$fg[red]%}%?%{$reset_color%} %{$fg[blue]%}%~%{$reset_color%} "
+
+PROMPT="%{$fg[red]%}%(?..%? )%{$reset_color%}%{$fg[blue]%}%~%{$reset_color%} "
 
 HISTSIZE=1000
 SAVEHIST=1000
