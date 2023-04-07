@@ -15,7 +15,7 @@ SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
 alias \
-	ls="command ls --color=auto" \
-	la="command ls --color=auto -A" \
-	ll="command ls --color=auto -lh" \
-	lla="command ls --color=auto -Alh"
+	ls="command ls --color=auto --group-directories-first --sort=extension" \
+	la="command ls --color=auto --group-directories-first --sort=extension -A" \
+	ll="command ls --color=auto --group-directories-first --sort=extension -hl" \
+	lla="command ls --color=auto --group-directories-first --sort=extension -Ahl"
