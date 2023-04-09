@@ -1,6 +1,3 @@
-export EDITOR=nvim
-export VISUAL=nvim
-
 bindkey -v
 setopt autocd
 
@@ -12,10 +9,10 @@ PROMPT="%{$fg[red]%}%(?..%? )%{$reset_color%}%{$fg[blue]%}%(3~|.../%2~|%~)%{$res
 
 HISTSIZE=1000
 SAVEHIST=1000
-HISTFILE=~/.zsh_history
+HISTFILE=~/.zhistory
 
 alias \
-	ls="command ls --color=auto --group-directories-first --sort=extension" \
-	la="command ls --color=auto --group-directories-first --sort=extension -A" \
-	ll="command ls --color=auto --group-directories-first --sort=extension -hl" \
-	lla="command ls --color=auto --group-directories-first --sort=extension -Ahl"
+	ls="command ls -F --color=auto --group-directories-first --sort=extension" \
+	la="command ls -AF --color=auto --group-directories-first --sort=extension" \
+	ll="command ls -Fhl --color=auto --group-directories-first --sort=extension" \
+	lla="command ls -AFhl --color=auto --group-directories-first --sort=extension"
