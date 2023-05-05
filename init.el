@@ -56,8 +56,18 @@
 
 (use-package nimbus-theme
   :ensure t
-  :config (load-theme 'nimbus))
+  :config
+  (load-theme 'nimbus))
 
 (use-package simple-modeline
   :ensure t
-  :config (simple-modeline-mode))
+  :config
+  (simple-modeline-mode))
+
+(use-package magit
+  :ensure t)
+
+(use-package undo-tree
+  :ensure t
+  :config
+  (global-undo-tree-mode))
