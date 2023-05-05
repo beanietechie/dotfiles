@@ -16,6 +16,16 @@
 ;; always show line numbers
 (global-display-line-numbers-mode 1)
 
+;;; custom hotkeys
+
+;; ibuffer
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+
+;;; misc
+
+;; ido
+(ido-mode 1)
+
 ;;; set and load custom file
 (setq custom-file (concat user-emacs-directory "custom.el"))
 (unless (file-exists-p (concat user-emacs-directory "custom.el"))
@@ -35,10 +45,6 @@
   (package-install 'use-package))
 
 ;; use packages
-
-(use-package evil
-  :ensure t
-  :config (evil-mode 1))
 
 (use-package nimbus-theme
   :ensure t
