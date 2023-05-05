@@ -16,6 +16,14 @@
 ;; always show line numbers
 (global-display-line-numbers-mode 1)
 
+;;; remove file clutter
+
+;; disable backups
+(setq make-backup-files nil)
+
+;; disable auto save
+(auto-save-mode -1)
+
 ;;; custom hotkeys
 
 ;; ibuffer
