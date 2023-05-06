@@ -55,10 +55,10 @@
 
 ;; use packages
 
-(use-package nimbus-theme
+(use-package dracula-theme
   :ensure t
   :config
-  (load-theme 'nimbus))
+  (load-theme 'dracula))
 
 (use-package simple-modeline
   :ensure t
@@ -67,8 +67,3 @@
 
 (use-package magit
   :ensure t)
-
-(use-package undo-tree
-  :ensure t
-  :config
-  (global-undo-tree-mode))
