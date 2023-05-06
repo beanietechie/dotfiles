@@ -6,10 +6,11 @@
 ;; hide menu bar
 (menu-bar-mode -1)
 
-;; hide tool bar and scroll bar
-(if window-system
-    ((tool-bar-mode -1)
-     (scroll-bar-mode -1)))
+;; hide tool bar
+(tool-bar-mode -1)
+
+;; hide scroll bar
+(scroll-bar-mode -1)
 
 ;;; built-in interface configuration
 
