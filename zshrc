@@ -1,4 +1,3 @@
-bindkey -v
 setopt autocd
 
 autoload -U compinit && compinit
