@@ -55,10 +55,8 @@
 
 ;; use packages
 
-(use-package dracula-theme
-  :ensure t
-  :config
-  (load-theme 'dracula))
+(use-package nimbus-theme
+  :ensure t)
 
 (use-package simple-modeline
   :ensure t
