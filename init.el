@@ -56,7 +56,9 @@
 ;; use packages
 
 (use-package nimbus-theme
-  :ensure t)
+  :ensure t
+  :config
+  (load-theme 'nimbus))
 
 (use-package simple-modeline
   :ensure t
