@@ -18,7 +18,7 @@ set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu -fn "NotoSansMono-8" -nb "#000000" | xargs swaymsg exec --
+set $menu dmenu_path | dmenu -fn "HackNerdFontMono-8" -nb "#000000" | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -33,7 +33,7 @@ set $menu dmenu_path | dmenu -fn "NotoSansMono-8" -nb "#000000" | xargs swaymsg 
 output * bg #000000 solid_color
 
 # font
-font pango:NotoSansMono Regular 8
+font pango:HackNerdFontMono Regular 8
 
 ### Idle configuration
 #
@@ -48,7 +48,7 @@ font pango:NotoSansMono Regular 8
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 exec swayidle -w timeout 270 "brightnessctl set 10%" resume "brightnessctl set 75%" \
-	timeout 300 "swaylock -f --font 'NotoSansMono' --font-size 8 -c 000000; swaymsg 'outpur * power off'" resume "swaymsg 'output * power on'"
+	timeout 300 "swaylock -f --font 'HackNerdFontMono' --font-size 12 -c 000000; swaymsg 'outpur * power off'" resume "swaymsg 'output * power on'"
 
 ### Input configuration
 #
@@ -99,7 +99,7 @@ seat * hide_cursor when-typing enable
 
     # Exit sway (logs you out of your Wayland session)
     #bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-    bindsym $mod+Shift+e exec swaylock -f --font 'NotoSansMono' --font-size 8 -c 000000
+    bindsym $mod+Shift+e exec swaylock -f --font 'HackNerdFontMono' --font-size 12 -c 000000
 #
 # Moving around:
 #
