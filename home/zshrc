@@ -2,5 +2,6 @@ export EDITOR=nvim
 export VISUAL=nvim
 export BROWSER=brave
 
-export GPG_TTY=$(tty)
+GPG_TTY=$(tty)
+
 bindkey -v
