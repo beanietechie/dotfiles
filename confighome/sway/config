@@ -35,12 +35,12 @@ output * bg ~/.config/sway/wallpaper fill
 
 # Window borders
 default_border normal 1
-gaps inner 15
+gaps inner 10
 
 set $grey       #323232
-set $lightblue  #3daee9
-set $white      #eff0f1
-set $bg         #31363b
+set $lightblue  #1d99f3
+set $white      #fcfcfc
+set $bg         #232627
 set $black      #900000
 set $red        #CB4B16
 
@@ -237,7 +237,7 @@ bindsym $mod+r mode "resize"
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
-	 gaps 5
+	 gaps 10
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
@@ -248,6 +248,8 @@ bar {
         background $bg
         focused_workspace $lightblue $bg $white
         active_workspace $grey $bg $white
+        inactive_workspace $grey $bg $white
+		  urgent_workspace $red $red $white
     }
 }
 
