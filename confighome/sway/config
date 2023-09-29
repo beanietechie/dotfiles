@@ -65,7 +65,7 @@ font pango:HackNerdFontMono Regular 10
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
-exec swayidle -w timeout 270 "brightnessctl set 10%" resume "brightnessctl set 75%" \
+exec swayidle -w timeout 270 "brightnessctl set 10%" resume "brightnessctl set 60%" \
 	timeout 300 "swaylock -f -u -c 000000; swaymsg 'outpur * power off'" resume "swaymsg 'output * power on'"
 
 ### Input configuration
