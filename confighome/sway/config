@@ -89,8 +89,6 @@ input type:touchpad {
 	middle_emulation enabled
 }
 
-seat * hide_cursor when-typing enable
-
 ### Key bindings
 #
 # Basics:
