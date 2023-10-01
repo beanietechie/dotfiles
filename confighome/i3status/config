@@ -1,0 +1,23 @@
+general {
+	output_format = "none"
+	separator = "  "
+	interval = 1
+}
+
+order += "memory"
+order += "battery all"
+order += "time"
+
+memory {
+	format = "[ %used (%percentage_used) ]"
+}
+
+battery all {
+	format = "[ %percentage %status %emptytime ]"
+	format_down = "[ No battery ]"
+	last_full_capacity = true
+}
+
+time {
+	format = "[ %Y-%m-%d %H:%M ]"
+}
