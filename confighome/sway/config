@@ -256,9 +256,9 @@ bar {
 exec gammastep
 
 # playerctl
-bindsym $mod+z exec playerctl -all-players previous
-bindsym $mod+x exec playerctl -all-players play-pause
-bindsym $mod+c exec playerctl -all-players next
+bindsym $mod+z exec playerctl --all-players previous
+bindsym $mod+x exec playerctl --all-players play-pause
+bindsym $mod+c exec playerctl --all-players next
 
 # screenshotting
 bindsym $mod+s exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') ~/img/scsht/$(date "+%F-%H-%M-%S-%3N").png
