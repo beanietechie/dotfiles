@@ -5,3 +5,6 @@ export BROWSER=brave
 GPG_TTY=$(tty)
 
 bindkey -v
+
+prompt off
+eval "$(starship init zsh)"
