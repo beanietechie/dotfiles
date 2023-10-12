@@ -4,10 +4,9 @@ set tabstop=3
 set shiftwidth=3
 set noshowmode
 
+set completeopt+=menuone,noinsert
+
 call plug#begin()
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-fugitive'
 Plug 'fneu/breezy'
 Plug 'itchyny/lightline.vim'
 call plug#end()
