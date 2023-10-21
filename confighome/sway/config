@@ -259,8 +259,8 @@ bindsym $mod+x exec playerctl --all-players play-pause
 bindsym $mod+c exec playerctl --all-players next
 
 # screenshotting
-bindsym $mod+s exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') ~/img/scsht/$(date "+%F-%H-%M-%S-%3N").png
-bindsym $mod+Shift+s exec grim -g "$(slurp)" ~/img/scsht/$(date "+%F-%H-%M-%S-%3N").png
+bindsym $mod+s exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') ~/img/scsht/"$(date)".png
+bindsym $mod+Shift+s exec grim -g "$(slurp)" ~/img/scsht/"$(date)".png
 
 include ~/.config/sway/machinespecific/*
 include /etc/sway/config.d/*
